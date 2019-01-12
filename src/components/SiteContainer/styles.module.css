@@ -1,0 +1,40 @@
+.Container {
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-rows: 8vh auto 8vh;
+  grid-template-columns: 15% 45% 25% 15%;
+  grid-template-areas:
+    "header header header header"
+    ". main aside ."
+    "footer footer footer footer";
+}
+@supports (display: grid) {
+  @media screen and (max-width: 400px) {
+    /*za mobitele */
+    body {
+      font-size: 24px;
+    }
+    .Container {
+      display: grid;
+      grid-gap: 10px;
+      max-width: 1000px;
+      grid-template-columns: 100%;
+      grid-template-rows: 8vh;
+      grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+    }
+  }
+}
+@supports (display: none) {
+  @media screen and (max-width: 250px) {
+    .Container {
+      display: none;
+    }
+  }
+}

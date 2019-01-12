@@ -1,0 +1,146 @@
+.Header {
+  grid-area: header;
+}
+
+.headerCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.Logo {
+  margin-left: 10px;
+  color: var(--color-gold, orange);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Img {
+  width: 10%;
+  height: 10%;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Nav {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.NavLink {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--color-primary, #000000);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s linear;
+}
+
+.NavLink:nth-child(1) {
+  margin-left: 10px;
+  border-bottom: 3px solid orange;
+}
+
+.NavLink:nth-child(2) {
+  border-bottom: 3px solid blue;
+}
+
+.NavLink:nth-child(3) {
+  border-bottom: 3px solid rgb(255, 255, 102);
+}
+
+.NavLink:nth-child(4) {
+  border-bottom: 3px solid red;
+}
+
+.NavLink:nth-child(5) {
+  border-bottom: 3px solid green;
+}
+
+.NavLink:nth-child(6) {
+  border-bottom: 3px solid lightblue;
+}
+
+.NavLink:nth-child(1):hover {
+  color: var(--color-gold, orange);
+  border-bottom: 3px solid var(--color-gold, orange);
+}
+
+.NavLink:nth-child(2):hover {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+.NavLink:nth-child(3):hover {
+  color: yellow;
+  border-bottom: 3px solid yellow;
+}
+
+.NavLink:nth-child(4):hover {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.NavLink:nth-child(5):hover {
+  color: green;
+  border-bottom: 3px solid green;
+}
+
+.NavLink:nth-child(6):hover {
+  color: lightblue;
+  border-bottom: 3px solid lightblue;
+}
+
+.NavLink__active:nth-child(1) {
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+
+.NavLink__active:nth-child(2) {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+.NavLink__active:nth-child(3) {
+  color: yellow;
+  border-bottom: 3px solid yellow;
+}
+
+.NavLink__active:nth-child(4) {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.NavLink__active:nth-child(5) {
+  color: green;
+  border-bottom: 3px solid green;
+}
+
+.NavLink__active:nth-child(6) {
+  color: lightblue;
+  border-bottom: 3px solid lightblue;
+}
+@supports (display: grid) {
+  @media screen and (max-width: 400px) {
+    /*za mobitele */
+    .Logo {
+      display: none;
+    }
+    .Img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

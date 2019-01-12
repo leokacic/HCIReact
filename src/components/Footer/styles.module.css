@@ -1,0 +1,37 @@
+.Footer {
+  border-top: 1px solid var(--color-grey, #000);
+  text-align: center;
+  grid-area: footer;
+}
+.footerNavigation{
+  background-color: #000;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+#footerLeft{
+  margin-left: 15%;
+  width: 60%;
+}
+.footerList{
+  text-align: center;
+}
+
+.footerList span{
+  padding: 0.5rem;
+}
+
+.navFooter{
+  color: gray;
+}
+
+.Copyright{
+  font-size: 0-8em;
+}
+
+@media screen and (max-width: 600px)  {
+  .footerNavigation{
+      flex-direction: column;
+  }
+}
+

@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 20xpx;
+}
+.card h3{
+  text-align: start;
+  margin-left: 5px;
+}
+.card p{
+  text-align: left;
+  margin-left: 5px;
+}
+.Aside {
+  display: flex;
+  flex-direction: column;
+  grid-area: aside;
+  border: 2px solid black;
+  background-color: palegreen;
+}
+.Aside h2{
+  text-align: left;
+}
+.asideContent {
+  display: flex;
+  flex-direction: column;
+}
+.SlikaNovosti{
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+}
+.TekstNovosti{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 5px;
+}
+@supports (display: grid) {
+  @media screen and (max-width: 400px) { /*za mobitele */
+    .Aside {
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-around;
+      align-items: center;
+    }
+    .asideContent {
+      grid-gap: 10px; 
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+      display: flex; 
+      flex-direction: column; 
+      grid-auto-rows: 100px;
+      overflow-y: hidden;
+    }
+  }
+}

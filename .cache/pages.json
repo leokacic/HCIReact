@@ -1,0 +1,72 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-blog-js",
+        "jsonName": "blog-f7a",
+        "path": "/blog/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "blog-post-five-add",
+        "path": "/blog/post-five"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "blog-post-four-acd",
+        "path": "/blog/post-four"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "blog-post-one-638",
+        "path": "/blog/post-one"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "blog-post-three-0ca",
+        "path": "/blog/post-three"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "blog-post-two-99a",
+        "path": "/blog/post-two"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-kultura-js",
+        "jsonName": "kultura-9c8",
+        "path": "/kultura/"
+    },
+    {
+        "componentChunkName": "component---src-pages-naslovna-js",
+        "jsonName": "naslovna-131",
+        "path": "/naslovna/"
+    },
+    {
+        "componentChunkName": "component---src-pages-putovanja-js",
+        "jsonName": "putovanja-530",
+        "path": "/putovanja/"
+    },
+    {
+        "componentChunkName": "component---src-pages-second-page-js",
+        "jsonName": "second-page-1c7",
+        "path": "/second-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-zanimljivosti-js",
+        "jsonName": "zanimljivosti-9db",
+        "path": "/zanimljivosti/"
+    },
+    {
+        "componentChunkName": "component---src-pages-zivotinje-js",
+        "jsonName": "zivotinje-e18",
+        "path": "/zivotinje/"
+    }
+]

@@ -1,0 +1,102 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  grid-area: main;
+}
+.GlavnaSlika {
+  width: 100%;
+  height: 100%;
+}
+.SporedneVijesti {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+.SporedneVijesti div {
+  margin-left: 5px;
+}
+.SporedneSlike {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+.PrvaVijest {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+.BottomLeft {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+}
+.DrugaVijest {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.PrvaVijest h3 {
+  margin-left: 5px;
+}
+.PrvaVijest p {
+  margin-left: 5px;
+}
+.DrugaVijest h3 {
+  margin-left: 5px;
+}
+.DrugaVijest p {
+  margin-left: 5px;
+}
+
+@supports (display: grid) {
+  @media screen and (max-width: 400px) {
+    /*za mobitele */
+    .BottomLeft {
+      position: relative;
+      margin-top: 20px;
+      color: black;
+    }
+    .PrvaVijest {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding-right: 0px;
+      margin-left: 0px;
+    }
+    .GlavnaSlika {
+      max-width: 300px;
+      max-height: 300px;
+    }
+    .SporedneVijesti {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding-right: 0px;
+      margin-left: 0px;
+    }
+    .SporedneSlike {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1000%;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  /*za tablete */
+  .BottomLeft {
+    font-size: 15px;
+  }
+}
